@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDF.Estate | Property Finder</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">GDF.<span>Estate</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Contact</a></li>
+            
+            <li><button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Dream Property</h1>
+            <p>Discover the best properties for rent and sale in Turkey.</p>
+            
+            <div class="filters">
+                <input type="text" id="searchInput" placeholder="Search (e.g., Villa, Studio)...">
+                
+                <select id="cityFilter">
+                    <option value="all">All Cities</option>
+                    <option value="Istanbul">Istanbul</option>
+                    <option value="Ankara">Ankara</option>
+                    <option value="Antalya">Antalya</option>
+                </select>
+                
+                <select id="statusFilter">
+                    <option value="all">All Statuses</option>
+                    <option value="sale">For Sale</option>
+                    <option value="rent">For Rent</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        
+        <section class="featured-section">
+            <h2 class="section-title">VIP Featured Properties</h2>
+            <div class="slider-wrapper">
+                <button id="slideLeft" class="slider-btn">&lt;</button>
+                <div id="featuredSlider" class="featured-slider">
+                    </div>
+                <button id="slideRight" class="slider-btn">&gt;</button>
+            </div>
+        </section>
+
+        <section class="all-properties-section">
+            <h2 class="section-title">Browse Properties</h2>
+            <div id="propertyGrid" class="property-grid">
+                </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>GDF.<span>Estate</span></h3>
+                <p>📍 Istanbul, Türkiye</p>
+                <p>📧 Email: info@gdf.estate</p>
+                <p>📞 Phone: +90 544 612 1356</p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 GDF.Estate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
